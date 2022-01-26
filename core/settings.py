@@ -1,12 +1,14 @@
 
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-g&u1k0%45ozw&yin0adj(1ruw9l!31g9dqvk4e0q3ldq)%^@zu'
+SECRET_KEY = 'django-insecure-k&sg0$t6$)$^l^^(hwxe23708r3fu5)a-1je-&nb1##*#mcfdb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -24,9 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # LOCAL APPS
-    'accounts',
-    
+    # Local apps
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -70,8 +71,9 @@ DATABASES = {
     }
 }
 
-# Auth Custom User 
-AUTH_USER_MODEL = 'accounts.CustomUser'
+
+AUTH_USER_MODEL = 'account.CustomUser'
+
 
 
 # Password validation
@@ -98,7 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Manila'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
